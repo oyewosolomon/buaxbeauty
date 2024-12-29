@@ -23,7 +23,7 @@ const About = () => {
         </div>
       </nav>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 pt-10">
         {/* Mobile Services */}
         <div className="md:hidden overflow-x-auto mb-8">
           <ServiceNav
@@ -45,14 +45,11 @@ const About = () => {
           </div>
 
           {/* Image Grid */}
-          <div className="flex-1">
+          <div className="flex-1 ">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
              
                 <div className="col-span-1 row-span-1">
-                  <div 
-                    className="relative h-98 overflow-hidden group"
-                 
-                  >
+                  <div className="relative h-98 overflow-hidden group">
                     <img 
                       src="/busola.png"
                       alt="CEO"
@@ -61,19 +58,14 @@ const About = () => {
                     <div className={`absolute inset-0 bg-black/30 transition-opacity duration-300 }`} />
                   </div>
                 </div>
-                <div className="">
-                  <div 
-                    className="relative overflow-hidden group text-lg"
-                  >
+                <div className="col-span-2 pr-12">
+                  <div className="relative overflow-hidden group text-lg">
                     <h1 className='font-bold text-3xl mb-2'>Meet Buaxbeauty</h1>
                     
                     Welcome to Buaxbeauty,a premier beauty brand dedicated to enhancing natural beauty through innovative and high-quality services. Our mission is to empower individuals to feel confident and radiant in their own skin. As a celebrity and bridal makeup artist, I specialize in enhancing one’s natural beauty. We believe that beauty is more than skin deep; it’s about embracing one’s unique features and expressing individuality. Each brushstroke is intentional, each look uniquely tailored to reflect your inner radiance. We are committed to providing an exceptional customer experience by utilizing luxury products and ensuring that every client receives personalized attention. Our team of experts are dedicated to delivering services that not only enhance appearance but also promote well-being and self-confidence.
                     
                   </div>
                 </div>
-             
-
-              
             </div>
           </div>
         </div>
