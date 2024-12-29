@@ -22,13 +22,13 @@ export const services = [
       title: `Grooming Photo ${i + 1}`,
       category: 'Male Grooming'
     })),
-    'Editorial': Array.from({ length: 6 }, (_, i) => ({
+    'Editorial': Array.from({ length: 4 }, (_, i) => ({
       src: `/editorial-${i + 1}.png`,
       alt: `Editorial ${i + 1}`,
       title: `Editorial Photo ${i + 1}`,
       category: 'Editorial'
     })),
-    'Birthday Shoot': Array.from({ length: 6 }, (_, i) => ({
+    'Birthday Shoot': Array.from({ length: 4 }, (_, i) => ({
       src: `/birthday-${i + 1}.png`,
       alt: `Birthday ${i + 1}`,
       title: `Birthday Photo ${i + 1}`,
