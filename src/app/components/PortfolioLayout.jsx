@@ -3,18 +3,15 @@
 import React, { useState } from 'react';
 import ServiceNav from './ServiceNav';
 import { imageData } from './portfolioData';
+import Navigation from '../components/Navigation';
 
 const PortfolioLayout = () => {
   const [hoveredImage, setHoveredImage] = useState(null);
   const [selectedService, setSelectedService] = useState('Wedding and Pre Wedding');
 
   return (
-    <div className="min-h-screen bg-white">
-      <nav className="p-4 flex justify-center">
-        <div className="w-24 h-24 mb-4 transition-transform hover:scale-105 duration-300">
-          <img src="/logo.png" alt="Binax Logo" className="rounded-full" />
-        </div>
-      </nav>
+    <div className="min-h-screen bg-white pb-5">
+      <Navigation/>
 
       <div className="container mx-auto px-4">
         {/* Mobile Services */}

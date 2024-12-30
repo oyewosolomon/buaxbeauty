@@ -6,6 +6,7 @@ import Link from 'next/link';
 import ServiceNav from '@/app/components/ServiceNav'
 import { imageData } from '@/app/components/portfolioData';
 import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
 
 const About = () => {
   
@@ -15,13 +16,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="p-4 flex justify-center">
-        <div className="w-24 h-24 mb-4 transition-transform hover:scale-105 duration-300">
-            <Link href="/">
-                <img src="/logo.png" alt="Binax Logo" className="rounded-full" />
-            </Link>
-        </div>
-      </nav>
+      <Navigation/>
 
       <div className="container mx-auto px-4 pt-10">
         {/* Mobile Services */}

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Footer from '../components/Footer';
 import BookingModal from '../components/BookingModal';
+import Navigation from '../components/Navigation';
 
 
 const Classess = () => {
@@ -23,12 +24,7 @@ const Classess = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="p-4 flex justify-center">
-        <div className="w-24 h-24 mb-4 transition-transform hover:scale-105 duration-300">
-          <img src="/logo.png" alt="Binax Logo" className="rounded-full" />
-        </div>
-      </nav>
+     <Navigation/>
 
       {/* Main Content */}
       <div className="container mx-auto px-8 py-12">
