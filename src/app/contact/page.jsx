@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Details */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-12 w-100 md:w-2/3 mx-auto">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                 <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaPhoneAlt className="pr-1"/> Phone</h2>
                 <p className="text-gray-700">09026357854</p>
