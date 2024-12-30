@@ -5,6 +5,8 @@ import Link from "next/link";
 import ServiceNav from "@/app/components/ServiceNav";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF } from "react-icons/fa"; // Importing react-icons
+
 
 const Contact = () => {
   const [selectedService, setSelectedService] = useState("Wedding and Pre Wedding");
@@ -52,22 +54,22 @@ const Contact = () => {
             {/* Contact Details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2">Phone</h2>
+                <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaPhoneAlt className="pr-1"/> Phone</h2>
                 <p className="text-gray-700">09026357854</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2">Email</h2>
+                <h2 className="text-lg font-bold mb-2 flex place-items-center"><FaEnvelope className="pr-1"/> Email</h2>
                 <p className="text-gray-700">buusoladeleke@gmail.com</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2">Instagram</h2>
+                <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaInstagram className="pr-1" /> Instagram</h2>
                 <p className="text-gray-700">@Buaxbeauty</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2">Facebook</h2>
+                <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"> <FaFacebookF className="pr-1"/>Facebook</h2>
                 <p className="text-gray-700">Busola Adeleke</p>
               </div>
             </div>
