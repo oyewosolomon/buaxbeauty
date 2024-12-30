@@ -1,4 +1,3 @@
-
 "use client"
 
 import React, { useState } from 'react';
@@ -9,17 +8,16 @@ import Footer from '../components/Footer';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
 import Navigation from '../components/Navigation';
 
 const Review = () => {
-  
-  const [hoveredImage, setHoveredImage] = useState(null);
   const [selectedService, setSelectedService] = useState('Wedding and Pre Wedding');
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
-    phone: ''
+    review: ''
   });
 
   const handleSubmit = (e) => {
@@ -36,12 +34,11 @@ const Review = () => {
   };
 
   const handleClose = () => {
-    // Reset both the form and confirmation state
     setFormData({
       firstName: '',
       lastName: '',
       email: '',
-      phone: ''
+      review: ''
     });
     setIsConfirmed(false);
     onClose();
@@ -52,7 +49,6 @@ const Review = () => {
       <Navigation/>
 
       <div className="container mx-auto px-4">
-        {/* Mobile Services */}
         <div className="md:hidden overflow-x-auto mb-8">
           <ServiceNav
             selectedService={selectedService}
@@ -61,9 +57,7 @@ const Review = () => {
           />
         </div>
 
-        {/* Desktop Layout */}
         <div className="flex gap-8">
-          {/* Desktop Services */}
           <div className="hidden md:block w-1/6">
             <ServiceNav
               selectedService={selectedService}
@@ -72,7 +66,6 @@ const Review = () => {
             />
           </div>
 
-          {/* Image Grid */}
           <div className="flex-1">
             <div className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-4">
                 <div className="">
@@ -115,13 +108,13 @@ const Review = () => {
                       </div>
 
                       <div>
-                        <label className="text-sm text-gray-600">Phone Number</label>
-                        <Input
-                          type="tel"
-                          name="phone"
-                          value={formData.phone}
+                        <label className="text-sm text-gray-600">Your Review</label>
+                        <Textarea
+                          name="review"
+                          value={formData.review}
                           onChange={handleInputChange}
-                          className="w-full p-2 border rounded-2xl"
+                          className="w-full p-2 border rounded-2xl min-h-[150px]"
+                          placeholder="Share your experience..."
                           required
                         />
                       </div>
@@ -130,7 +123,7 @@ const Review = () => {
                         type="submit"
                         className="w-full bg-black text-white py-6 rounded-full hover:bg-gray-800 transition-colors"
                       >
-                        Confirm Booking
+                        Submit Review
                       </Button>
                     </form>
                   </div>
