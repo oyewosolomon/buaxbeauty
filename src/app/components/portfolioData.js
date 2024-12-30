@@ -34,7 +34,7 @@ export const services = [
       title: `Birthday Photo ${i + 1}`,
       category: 'Birthday Shoot'
     })),
-    'Music/Commercial shoot': Array.from({ length: 6 }, (_, i) => ({
+    'Music/Commercial shoot': Array.from({ length: 7 }, (_, i) => ({
       src: `/commercial-${i + 1}.png`,
       alt: `Commercial ${i + 1}`,
       title: `Commercial Photo ${i + 1}`,
