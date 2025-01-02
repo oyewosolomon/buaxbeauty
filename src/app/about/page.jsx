@@ -57,8 +57,7 @@ const About = () => {
                   <div className="relative overflow-hidden group text-lg">
                     <h1 className='font-bold text-3xl mb-2'>Meet Buaxbeauty</h1>
                     
-                    Welcome to Buaxbeauty,a premier beauty brand dedicated to enhancing natural beauty through innovative and high-quality services. Our mission is to empower individuals to feel confident and radiant in their own skin. As a celebrity and bridal makeup artist, I specialize in enhancing one’s natural beauty. We believe that beauty is more than skin deep; it’s about embracing one’s unique features and expressing individuality. Each brushstroke is intentional, each look uniquely tailored to reflect your inner radiance. We are committed to providing an exceptional customer experience by utilizing luxury products and ensuring that every client receives personalized attention. Our team of experts are dedicated to delivering services that not only enhance appearance but also promote well-being and self-confidence.
-                    
+                    Welcome to Buaxbeauty, a premier beauty brand dedicated to enhancing natural beauty through innovative; high-quality services. Our mission is to empower individuals to feel confident and radiant in their own skin. As a celebrity and bridal makeup artist, I believe that beauty is more than skin deep; it’s about embracing one’s unique features and expressing individuality. Our  team focuses and specializes in enhancing one’s natural beauty, making each brushstroke intentional, each look uniquely tailored to reflect your inner radiance. We are committed to providing an exceptional customer and ensuring that every client receives personalized attention. Let’s help serve you right with the best care you deserve!
                   </div>
                 </div>
             </div>
