@@ -5,7 +5,7 @@ import Link from "next/link";
 import ServiceNav from "@/app/components/ServiceNav";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
-import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF } from "react-icons/fa"; // Importing react-icons
+import { FaPhoneAlt, FaEnvelope, FaInstagram, FaFacebookF,FaTiktok } from "react-icons/fa"; // Importing react-icons
 
 
 const Contact = () => {
@@ -53,25 +53,37 @@ const Contact = () => {
 
             {/* Contact Details */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-12 w-100 md:w-2/3 mx-auto">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaPhoneAlt className="pr-1"/> Phone</h2>
-                <p className="text-gray-700">09026357854</p>
-              </div>
+            <a href="tel:09026357854" className="block bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaPhoneAlt className="pr-1"/> Phone</h2>
+              <p className="text-gray-700">09026357854</p>
+            </a>
 
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2 flex place-items-center"><FaEnvelope className="pr-1"/> Email</h2>
-                <p className="text-gray-700">buusoladeleke@gmail.com</p>
-              </div>
+            {/* Email */}
+            <a href="mailto:buusoladeleke@gmail.com" className="block bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2 flex place-items-center"><FaEnvelope className="pr-1"/> Email</h2>
+              <p className="text-gray-700">buusoladeleke@gmail.com</p>
+            </a>
 
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaInstagram className="pr-1" /> Instagram</h2>
-                <p className="text-gray-700">@Buaxbeauty</p>
-              </div>
+            {/* Instagram */}
+            <a href="https://www.instagram.com/buaxbeauty/profilecard/?igsh=MW8ydzlyOHZnNHdwMw==" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaInstagram className="pr-1" /> Instagram</h2>
+              <p className="text-gray-700">@Buaxbeauty</p>
+            </a>
 
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"> <FaFacebookF className="pr-1"/>Facebook</h2>
-                <p className="text-gray-700">Busola Adeleke</p>
-              </div>
+            {/* Facebook */}
+            <a href="https://www.facebook.com/share/1McESjVM9Q/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaFacebookF className="pr-1"/>Facebook</h2>
+              <p className="text-gray-700">Busola Adeleke</p>
+            </a>
+
+             
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 mb-12 w-100 md:w-2/3 mx-auto">
+           
+            <a href="https://www.tiktok.com/@buaxbeauty?_t=ZM-8sqaiKJ9Fp8&_r=1" target="_blank" rel="noopener noreferrer" className="block bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <h2 className="text-lg font-bold mb-2 flex align-middle place-items-center"><FaTiktok className="pr-1"/>TikTok</h2>
+              <p className="text-gray-700">@buaxbeauty</p>
+            </a>
             </div>
 
             {/* Contact Form */}
